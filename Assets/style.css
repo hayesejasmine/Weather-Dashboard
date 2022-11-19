@@ -28,12 +28,22 @@ padding-top:4px;
 padding-bottom: 4px;
 }
 
+.sidenav button:active,.sidenav button:hover{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
 #searchButton{
     background-color: rgba(71, 129, 211, 0.861);
     color: white;
     margin-bottom: 5px;
     padding-bottom: 6px;
     padding-top: 6px;
+}
+
+#searchButton:active,#seachButton:hover{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;  
 }
 
 #cityName{
@@ -46,4 +56,26 @@ hr{
     margin-top: 7px;
     margin-bottom: 15px;
     width: 229px;
+}
+
+.maincard{
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    float: right;
+    width: 71%;
+    height: 900%;
+ margin-top: -38%;
+ margin-right: 5%;
+}
+
+.forecastcard{
+    border-style: none;
+    border-width: 1px;
+    padding: 10px;
+    float: right;
+    width: 71%;
+    height: 900%;
+ margin-top: -23%;
+ margin-right: 5%; 
 }
