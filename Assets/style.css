@@ -5,18 +5,25 @@ header{
 background-image: linear-gradient(to right, rgb(100, 100, 241), rgb(59, 59, 137), rgb(45, 4, 121) );
 color: white;
 text-align: center;
-margin-top: -20px;
 margin-left: -20px;
 margin-right: -20px;
 padding-top: 1px;
-padding-bottom: .2px;
+padding-bottom: .3px;
 font-family: Arial, Helvetica, sans-serif;
 }
 
 .sidenav {
 font-family: Arial, Helvetica, sans-serif;
+margin-top: 10px;
+margin-left: 10px;
 height: 1000%;
-width: 200px;}
+width: 200px;
+position: fixed;}
+
+.sidenav h2{
+    font-size: 24px;
+    font-weight: bold;
+}
 
 .sidenav button{
 width: 230px;
@@ -47,7 +54,7 @@ padding-bottom: 4px;
 }
 
 #cityName{
-    width: 222px;
+    width: 232px;
     height: 27px;
     margin-bottom: 10px;
 }
@@ -58,24 +65,31 @@ hr{
     width: 229px;
 }
 
-.maincard{
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-    float: right;
-    width: 71%;
-    height: 900%;
- margin-top: -38%;
- margin-right: 5%;
+.card{
+ display: flex;
+ margin-left: 260px;
+ margin-top: 10px;
+ height: 170px;
+ width: 68%;
+ border-color: black;
 }
 
-.forecastcard{
-    border-style: none;
-    border-width: 1px;
-    padding: 10px;
-    float: right;
-    width: 71%;
-    height: 900%;
- margin-top: -23%;
- margin-right: 5%; 
+.col-sm-2 {
+background-color: rgb(59, 59, 79);
+margin-left: 270px;
+width: 200px;
+height: 240px;
+margin-inline-start: 20px;
+}
+
+.col-sm-12 h3{
+    margin-left: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.col-sm-12{
+    margin-left: 260px;
 }
