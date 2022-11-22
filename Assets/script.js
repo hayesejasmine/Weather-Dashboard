@@ -16,18 +16,6 @@ $(document).ready(function () {
    // Store past searched cities
    let previousCities = [];
 
-   //place cities in aplhabetical order
-   function compare(a, b) {
-    const cityA = a.city.toUpperCase();
-    const cityB = b.city.toUpperCase();
-     let comparison = 0;
-    if (cityA > cityB) {
-        comparison = 1;
-    } else if (cityA < cityB) {
-        comparison = -1;
-    }
-    return comparison;
-}
 
     // pull from local storage
     function generateCities() {
@@ -42,6 +30,18 @@ $(document).ready(function () {
         localStorage.setItem('previousCities', JSON.stringify(previousCities));
     }
 
+       //place cities in aplhabetical order
+   function compare(a, b) {
+    const cityA = a.city.toUpperCase();
+    const cityB = b.city.toUpperCase();
+     let comparison = 0;
+    if (cityA > cityB) {
+        comparison = 1;
+    } else if (cityA < cityB) {
+        comparison = -1;
+    }
+    return comparison;
+}
    
  
     function buildURLFromInputs(city) {
@@ -67,7 +67,6 @@ $(document).ready(function () {
         });
     }
     
-
     // call the OpenWeather API
     function searchWeather(queryURL) {
         $.ajax({

@@ -28,3 +28,5 @@ THEN I am again presented with current and future conditions for that city
 https://user-images.githubusercontent.com/114713151/201831359-c5b96058-7150-479a-9769-7b51ce91da9a.png
 
 ## Deployed Application URL
+
+https://hayesejasmine.github.io/Weather-Dashboard/index.html
